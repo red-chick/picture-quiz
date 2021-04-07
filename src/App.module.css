@@ -1,0 +1,34 @@
+.App {
+  min-height: 100vh;
+  background-image: url("./background.jpeg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App > h1 {
+  margin: 0;
+  color: white;
+  font-size: 9vw;
+  animation-name: grow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes grow {
+  from {
+    font-size: 9vw;
+  }
+
+  to {
+    font-size: 10vw;
+  }
+}
+
+.App > button {
+  font-size: 3vw;
+  margin-top: 20px;
+}

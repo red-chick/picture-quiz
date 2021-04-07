@@ -1,0 +1,18 @@
+.QuizPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10vw;
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+.QuizPage > img {
+  max-height: 80vh;
+}
+
+.QuizPage > .center {
+  position: absolute;
+}
