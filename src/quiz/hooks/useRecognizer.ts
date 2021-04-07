@@ -9,7 +9,9 @@ declare global {
 const SpeechRecognition =
   window.SpeechRecognition || window.webkitSpeechRecognition;
 
-const recognition = new SpeechRecognition();
+const recognition = SpeechRecognition
+  ? new SpeechRecognition()
+  : ({} as SpeechRecognition);
 recognition.lang = "ko-KR";
 
 const useRecognizer = (): [string, () => void, () => void] => {
